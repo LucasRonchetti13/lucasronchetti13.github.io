@@ -1,56 +1,209 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucas Ronchetti</title>
-    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 48px 24px;
+            font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: #111827;
+            background-color: #ffffff;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 0.2rem;
+        }
+
+        h2 {
+            margin-top: 60px;
+            margin-bottom: 24px;
+            font-size: 1.8rem;
+        }
+
+        h3 {
+            margin-top: 0;
+            margin-bottom: 12px;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: #4b5563;
+            margin-bottom: 24px;
+        }
+
+        .eyebrow {
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #6b7280;
+            font-size: 0.85rem;
+            margin-bottom: 8px;
+        }
+
+        .links {
+            margin-top: 24px;
+            margin-bottom: 48px;
+        }
+
+        .links a {
+            display: inline-block;
+            text-decoration: none;
+            color: #111827;
+            border: 1px solid #d1d5db;
+            border-radius: 999px;
+            padding: 8px 14px;
+            margin-right: 10px;
+            transition: background-color 0.2s;
+        }
+
+        .links a:hover {
+            background-color: #f3f4f6;
+        }
+
+        .project {
+            border: 1px solid #e5e7eb;
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 28px;
+        }
+
+        video {
+            width: 100%;
+            border-radius: 12px;
+            margin-top: 16px;
+            margin-bottom: 16px;
+            border: 1px solid #e5e7eb;
+        }
+
+        .tags {
+            margin-top: 12px;
+        }
+
+        .tags span {
+            display: inline-block;
+            background: #f3f4f6;
+            border-radius: 999px;
+            padding: 4px 10px;
+            margin-right: 8px;
+            margin-top: 6px;
+            font-size: 0.85rem;
+        }
+
+        .experience-item {
+            margin-bottom: 20px;
+        }
+
+        .experience-item strong {
+            display: block;
+        }
+
+        footer {
+            margin-top: 80px;
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 
 <body>
 
-<h1>Lucas Ronchetti</h1>
+    <div class="eyebrow">Robotics · AI · Computer Vision</div>
 
-<p>
-M.Sc. Informatics Student @ TUM<br>
-Computer Vision @ Magazino<br>
-Project Leader @ RoboTUM
-</p>
+    <h1>Lucas Ronchetti</h1>
 
-<p>
-<a href="cv.pdf">CV</a>
-|
-<a href="https://github.com/LucasRonchetti13">GitHub</a>
-|
-<a href="https://linkedin.com/in/lucas-ronchetti">LinkedIn</a>
-</p>
+    <div class="subtitle">
+        M.Sc. Informatics Student @ TUM<br>
+        Computer Vision @ Magazino<br>
+        Project Leader @ RoboTUM
+    </div>
 
-<h2>Projects</h2>
+    <div class="links">
+        <a href="cv.pdf" target="_blank">CV</a>
+        <a href="https://github.com/LucasRonchetti13" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/lucas-ronchetti" target="_blank">LinkedIn</a>
+    </div>
 
-<h3>Imitation Learning for Robotic X-Ray Positioning</h3>
+    <h2>Projects</h2>
 
-<video width="800" controls>
-    <source src="videos/xray.mp4" type="video/mp4">
-</video>
+    <div class="project">
+        <h3>Imitation Learning for Robotic X-Ray Positioning</h3>
 
-<p>
-Learning robotic X-ray positioning from expert demonstrations.
-</p>
+        <video controls>
+            <source src="videos/xray.mp4" type="video/mp4">
+        </video>
 
-<h3>Uncertainty-Guided Tactile Shape Exploration</h3>
+        <p>
+            Learning robotic X-ray positioning from expert demonstrations using simulation-based training.
+        </p>
 
-<video width="800" controls>
-    <source src="videos/tactile.mp4" type="video/mp4">
-</video>
+        <div class="tags">
+            <span>Unity</span>
+            <span>PyTorch</span>
+            <span>ZeroMQ</span>
+            <span>Imitation Learning</span>
+        </div>
+    </div>
 
-<p>
-Active tactile exploration using uncertainty-guided next-best-touch selection.
-</p>
+    <div class="project">
+        <h3>Uncertainty-Guided Tactile Shape Exploration</h3>
 
-<h3>Object Detection for a Litter-Collecting Robot</h3>
+        <video controls>
+            <source src="videos/tactile.mp4" type="video/mp4">
+        </video>
 
-<p>
-Fine-tuned object detection model for robotic litter collection.
-</p>
+        <p>
+            Active tactile exploration using uncertainty-guided next-best-touch selection for shape reconstruction.
+        </p>
+
+        <div class="tags">
+            <span>PyTorch</span>
+            <span>Bayesian Deep Learning</span>
+            <span>Robotics</span>
+        </div>
+    </div>
+
+    <div class="project">
+        <h3>Object Detection for a Litter-Collecting Robot</h3>
+
+        <p>
+            Fine-tuned an object detection model for robotic litter detection and collection.
+        </p>
+
+        <div class="tags">
+            <span>PyTorch</span>
+            <span>Computer Vision</span>
+            <span>Object Detection</span>
+        </div>
+    </div>
+
+    <h2>Experience</h2>
+
+    <div class="experience-item">
+        <strong>Magazino GmbH</strong>
+        Working Student Perception & Grasping (2025 – Present)
+    </div>
+
+    <div class="experience-item">
+        <strong>RoboTUM Student Club</strong>
+        Project Leader (2025 – 2026)
+    </div>
+
+    <div class="experience-item">
+        <strong>Helmholtz Institute of Computational Biology</strong>
+        B.Sc. Thesis with Prof. Fabian Theis
+    </div>
+
+    <footer>
+        Munich, Germany
+    </footer>
 
 </body>
+
 </html>
